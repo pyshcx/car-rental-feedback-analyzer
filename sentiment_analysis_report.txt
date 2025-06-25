@@ -1,0 +1,37 @@
+
+===============================================================================
+                        CAR RENTAL FEEDBACK ANALYSIS REPORT
+===============================================================================
+
+OVERVIEW:
+---------
+Total Reviews Analyzed: 20
+Analysis Date: 2025-06-25 15:42:51
+
+SENTIMENT DISTRIBUTION:
+----------------------
+Positive Reviews: 12 (60.0%)
+Negative Reviews: 5 (25.0%)
+Neutral Reviews: 3 (15.0%)
+
+AVERAGE RATINGS BY SENTIMENT:
+----------------------------
+    Negative: 1.20/5.0
+    Neutral: 2.00/5.0
+    Positive: 4.33/5.0
+
+MOST COMMON ISSUES (Top 5):
+---------------------------
+    Cleanliness: 3 occurrences
+    Vehicle Condition: 2 occurrences
+    Service Quality: 2 occurrences
+    Wait Time: 1 occurrences
+    Pricing: 1 occurrences
+
+RECOMMENDATIONS:
+---------------
+    • Improve vehicle cleaning procedures.
+    • Enhance vehicle maintenance and inspection.
+    • Provide customer service training for staff.
+
+===============================================================================

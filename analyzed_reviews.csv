@@ -1,0 +1,21 @@
+customer_name,date,review_text,rating,cleaned_text,sentiment,polarity,subjectivity,issues
+Customer_1,2024-01-01,Great service! The car was clean and the staff was very helpful. Highly recommend.,5,great service the car was clean and the staff was very helpful highly recommend,Positive,0.38166666666666665,0.5725,[]
+Customer_2,2024-01-02,The car had some issues with the engine and the rental process took too long.,2,the car had some issues with the engine and the rental process took too long,Neutral,-0.05,0.4,[]
+Customer_3,2024-01-03,Excellent experience. Car was in perfect condition and the pickup was smooth.,5,excellent experience car was in perfect condition and the pickup was smooth,Positive,0.7999999999999999,0.8333333333333334,[]
+Customer_4,2024-01-04,Very disappointed with the service. The car was dirty and had scratches.,1,very disappointed with the service the car was dirty and had scratches,Negative,-0.7875000000000001,0.8875000000000001,"['cleanliness', 'vehicle_condition']"
+Customer_5,2024-01-05,Good value for money. The car was decent and staff was professional.,4,good value for money the car was decent and staff was professional,Positive,0.3222222222222222,0.45555555555555555,[]
+Customer_6,2024-01-06,Terrible experience. The car broke down during my trip and no support was provided.,1,terrible experience the car broke down during my trip and no support was provided,Negative,-0.5777777777777778,0.6444444444444445,[]
+Customer_7,2024-01-07,Amazing service! Quick rental process and the car was brand new.,5,amazing service quick rental process and the car was brand new,Positive,0.3565656565656566,0.6181818181818182,[]
+Customer_8,2024-01-08,Average experience. Car was okay but could have been cleaner.,3,average experience car was okay but could have been cleaner,Positive,0.175,0.44999999999999996,[]
+Customer_9,2024-01-09,Outstanding customer service. Staff went above and beyond to help us.,5,outstanding customer service staff went above and beyond to help us,Positive,0.25,0.4875,[]
+Customer_10,2024-01-10,Poor service quality. Long waiting times and unclean vehicle.,2,poor service quality long waiting times and unclean vehicle,Negative,-0.225,0.5,"['cleanliness', 'service_quality', 'wait_time']"
+Customer_11,2024-01-11,Satisfied with the rental. Car was reliable and fuel efficient.,4,satisfied with the rental car was reliable and fuel efficient,Positive,0.5,1.0,[]
+Customer_12,2024-01-12,Bad experience. Hidden charges and rude staff behavior.,1,bad experience hidden charges and rude staff behavior,Negative,-0.38888888888888884,0.5333333333333333,"['service_quality', 'pricing']"
+Customer_13,2024-01-13,Perfect car rental experience. Would definitely use again.,5,perfect car rental experience would definitely use again,Positive,0.5,0.75,[]
+Customer_14,2024-01-14,Car had mechanical problems and rental counter was understaffed.,2,car had mechanical problems and rental counter was understaffed,Neutral,0.0,0.0,[]
+Customer_15,2024-01-15,Good service overall. Minor issues with documentation process.,3,good service overall minor issues with documentation process,Positive,0.21666666666666665,0.26666666666666666,[]
+Customer_16,2024-01-16,Excellent car condition and very competitive pricing.,4,excellent car condition and very competitive pricing,Positive,0.6,0.65,[]
+Customer_17,2024-01-17,Worst rental experience ever. Car smelled bad and had technical issues.,1,worst rental experience ever car smelled bad and had technical issues,Negative,-0.5666666666666665,0.5888888888888889,"['cleanliness', 'vehicle_condition']"
+Customer_18,2024-01-18,Great customer support and hassle-free return process.,4,great customer support and hasslefree return process,Positive,0.8,0.75,[]
+Customer_19,2024-01-19,Car was not ready on time and staff was unprofessional.,2,car was not ready on time and staff was unprofessional,Neutral,-0.1,0.5,[]
+Customer_20,2024-01-20,Fantastic service! Clean car and transparent pricing.,5,fantastic service clean car and transparent pricing,Positive,0.38333333333333336,0.8,[]

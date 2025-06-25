@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Customer Feedback Analyzer - College Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🚗 Car Rental Customer Feedback Analyzer - College Project Demo</h1>
+            <p class="header__subtitle">An intelligent system for analyzing customer feedback and sentiment in car rental services</p>
+        </div>
+    </header>
+
+    <!-- Project Overview Section -->
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card__body">
+                    <h2>Project Overview</h2>
+                    <p>This project demonstrates an automated system for analyzing customer feedback in the car rental industry. It uses natural language processing to understand customer sentiment and identify common issues.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="features-list">
+                        <li>✅ Real-time sentiment analysis of customer reviews</li>
+                        <li>✅ Automatic issue detection and categorization</li>
+                        <li>✅ Polarity and subjectivity scoring</li>
+                        <li>✅ Automated reporting and visualization</li>
+                        <li>✅ Interactive web interface for testing</li>
+                    </ul>
+
+                    <h3>Technologies Used</h3>
+                    <div class="tech-grid">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TextBlob</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section class="section demo-section">
+        <div class="container">
+            <div class="card">
+                <div class="card__body">
+                    <h2>🔬 Live Demo - Try It Yourself!</h2>
+                    <p>Enter a car rental review below to see the sentiment analysis in action:</p>
+                    
+                    <div class="demo-container">
+                        <div class="input-section">
+                            <label for="reviewInput" class="form-label">Customer Review:</label>
+                            <textarea 
+                                id="reviewInput" 
+                                class="form-control" 
+                                rows="4" 
+                                placeholder="Enter a car rental review here... (e.g., 'The car was clean and the service was excellent!' or 'The vehicle had mechanical issues and the staff was unhelpful.')"
+                            ></textarea>
+                            <button id="analyzeBtn" class="btn btn--primary mt-8">Analyze Review</button>
+                        </div>
+                        
+                        <div id="results" class="results-section hidden">
+                            <h3>Analysis Results</h3>
+                            <div class="results-grid">
+                                <div class="result-card">
+                                    <h4>Sentiment</h4>
+                                    <div id="sentimentResult" class="sentiment-badge"></div>
+                                </div>
+                                <div class="result-card">
+                                    <h4>Polarity Score</h4>
+                                    <div id="polarityResult" class="score"></div>
+                                    <small>(-1 = Very Negative, +1 = Very Positive)</small>
+                                </div>
+                                <div class="result-card">
+                                    <h4>Subjectivity Score</h4>
+                                    <div id="subjectivityResult" class="score"></div>
+                                    <small>(0 = Objective, 1 = Subjective)</small>
+                                </div>
+                            </div>
+                            <div id="issuesSection" class="issues-section hidden">
+                                <h4>Identified Issues</h4>
+                                <div id="issuesList" class="issues-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Results Section -->
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card__body">
+                    <h2>📊 Sample Analysis Results</h2>
+                    <p>Here are some example results from our analysis of 20 customer reviews:</p>
+                    
+                    <div class="charts-container">
+                        <div class="chart-wrapper">
+                            <h3>Sentiment Distribution</h3>
+                            <canvas id="sentimentChart" width="400" height="200"></canvas>
+                        </div>
+                        <div class="chart-wrapper">
+                            <h3>Common Issues Identified</h3>
+                            <canvas id="issuesChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="sample-reviews">
+                        <h3>Sample Review Analysis</h3>
+                        <div id="sampleReviewsContainer" class="sample-reviews-grid"></div>
+                    </div>
+
+                    <div class="report-image">
+                        <h3>Generated Report</h3>
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1750845664/pplx_code_interpreter/f0244193_si4f1j.jpg" alt="Sentiment Analysis Report" class="report-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details Section -->
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card__body">
+                    <h2>🔧 Implementation Details</h2>
+                    
+                    <div class="implementation-grid">
+                        <div class="implementation-item">
+                            <h3>Technical Approach</h3>
+                            <ul>
+                                <li>TextBlob library for natural language processing</li>
+                                <li>Rule-based sentiment classification</li>
+                                <li>Keyword matching for issue detection</li>
+                                <li>Statistical analysis of review patterns</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="implementation-item">
+                            <h3>Code Structure</h3>
+                            <ul>
+                                <li><strong>sentiment_analyzer.py:</strong> Core analysis engine</li>
+                                <li><strong>streamlit_app.py:</strong> Web interface</li>
+                                <li><strong>Data processing:</strong> CSV file handling</li>
+                                <li><strong>Visualization:</strong> Chart generation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="algorithm-explanation">
+                        <h3>Sentiment Analysis Algorithm</h3>
+                        <div class="algorithm-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <strong>Text Preprocessing</strong>
+                                    <p>Clean and normalize the input text, remove special characters</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <strong>Sentiment Scoring</strong>
+                                    <p>Calculate polarity (-1 to +1) and subjectivity (0 to 1) scores</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div class="step-content">
+                                    <strong>Classification</strong>
+                                    <p>Classify as Positive (>0.1), Negative (<-0.1), or Neutral</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">4</span>
+                                <div class="step-content">
+                                    <strong>Issue Detection</strong>
+                                    <p>Identify specific problems using keyword matching</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Files Section -->
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card__body">
+                    <h2>📁 Project Files & Setup</h2>
+                    
+                    <div class="files-grid" id="projectFiles"></div>
+
+                    <div class="setup-instructions">
+                        <h3>🚀 Quick Setup Instructions</h3>
+                        <div class="setup-steps">
+                            <div class="setup-step">
+                                <span class="setup-number">1</span>
+                                <div class="setup-content">
+                                    <strong>Install Dependencies</strong>
+                                    <code>pip install -r requirements.txt</code>
+                                </div>
+                            </div>
+                            <div class="setup-step">
+                                <span class="setup-number">2</span>
+                                <div class="setup-content">
+                                    <strong>Run Analysis Script</strong>
+                                    <code>python sentiment_analyzer.py</code>
+                                </div>
+                            </div>
+                            <div class="setup-step">
+                                <span class="setup-number">3</span>
+                                <div class="setup-content">
+                                    <strong>Start Web App</strong>
+                                    <code>streamlit run streamlit_app.py</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <h3>📚 Additional Resources</h3>
+                        <div class="links-grid">
+                            <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/55ceaba465fbea6292a34bd364e21ca2/c8ecf27b-e1bb-430d-be67-a5139780b150/bd9852d9.md" target="_blank" class="btn btn--outline">Quick Start Guide</a>
+                            <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/55ceaba465fbea6292a34bd364e21ca2/aa6edfa0-e3b2-4a75-8fab-f390f1405aaa/a0855834.md" target="_blank" class="btn btn--outline">One-Day Project Plan</a>
+                            <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/55ceaba465fbea6292a34bd364e21ca2/7e5aa050-c5d7-4513-9b89-eef5c111a382/b3356305.md" target="_blank" class="btn btn--outline">README Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Car Rental Feedback Analyzer - College Project Demo</p>
+            <p>Built with HTML, CSS, JavaScript, and Python</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
